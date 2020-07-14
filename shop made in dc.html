@@ -14,20 +14,16 @@
 <body>
   <header>
     <div class="container">
-      <div> <img src="img/logo.png" alt="Jami No" width="45" height="56" style="center-align:center">
-            <div>UX/UI Designer</div>
-      </div>
       <div>
-        <nav>
-          <div>
-            <ul>
-              <li><a href="index.html"> Work </a></li>
-              <li><a href="about.html"> About </a></li>
-              <li><a href="contact.html"> Contact </a></li>
-            </ul>
-          </div>
-        </nav>
+        <img id="logo" src="img/logo.png" alt="Jami No" >
       </div>
+        <nav>
+          <ul>
+            <li> <a href="index.html"> Work </a> </li>
+            <li> <a href="about.html"> About </a> </li>
+            <li> <a href="contact.html"> Contact </a> </li>
+          </ul>
+        </nav>
     </div>
   </header>
 
@@ -50,21 +46,18 @@
             I designed a new website as well as creating a new e-commerce experience for their users.
         </span> </p>
       </div>
-      <div>
-        <h3> Methods </h3>
+      <div class="row">
+        <h4> Methods </h4>
+          <li> UX/UI </li>
+          <li> Research </li>
+          <li> Design </li>
+          <li> Prototype </li>
+        <h4> Tools </h4>
           <li> UX/UI </li>
           <li> Research </li>
           <li> Design </li>
           <li> Prototype </li>
       </div>
-      <div>
-        <h3> Tools </h3>
-          <li> UX/UI </li>
-          <li> Research </li>
-          <li> Design </li>
-          <li> Prototype </li>
-      </div>
-    </div>
 
     <div> <!-- hero image -->
       <picture>
@@ -73,21 +66,19 @@
       </picture>
     </div>
 
-    <div> <!-- 1 - Research -->
+    <div> <!-- 1 - research -->
       <div>
         <h3> Research <h3>
       </div>
       <div>
-        <h4> Competitve Analysis - Etsy <h4>
-          <p><span> I performed a competitive analysis on Etsy because of their ecommerce platform and similarities in that they sell products made by individual makers.
-          I found that Etsy has a unique place in the e-commerce market due to their unique product offerings and artisinal vibes.
-          Although Etsy provides products made from individual makers, users can be innundated with too many choices and repetitive products.
-          Shop Made in DC's would be unique in that their products represent a community and would offer more "bespoke" products.
-           </span> </p>
+        <h4> Competitve Analysis <h4>
+          <p><span> I performed a competitive analysis on Etsy because of their ecommerce platform and similarities in that they sell products made by individual makers. I found that Etsy has a unique place in the e-commerce market due to their unique product offerings and artisinal vibes. Although Etsy provides products made from individual makers, users can be innundated with too many choices and repetitive products. Shop Made in DC's would be unique in that their products represent a community and would offer more "bespoke" products.
+          </span></p>
       </div>
       <div>
-        <hh4> Interviews </h4>
-          <p><span>I perfomed 5 in-person interviews with customers at Shop Made in DC after their check out process. The purpose was to get a sense of customer’s interactions with Shop Made in DC and to gain insights into how customers might interact with Shop Made in DC’s e-commerce marketplace.</span> </p>
+        <h4> Interviews </h4>
+          <p><span>I perfomed 5 in-person interviews with customers at Shop Made in DC after their check out process. The purpose was to get a sense of customer’s interactions with Shop Made in DC and to gain insights into how customers might interact with Shop Made in DC’s e-commerce marketplace.
+          </span> </p>
       </div>
     </div> <!-- End Competitive Analysis & Interviews -->
 
@@ -111,7 +102,7 @@
 
 
       <div> <!-- design -->
-        <div class="container">
+        <div>
           <h2> Design </h2>
           <p><span>  </span> </p>
         </div>
@@ -123,44 +114,50 @@
           </picture>
         </div>
 
-        <div class="container"><!-- final prototype -->
+        <div><!-- final prototype -->
           <h2> Final Prototype </h2>
         </div>
 
-        <div class="container"> <!-- style guide -->
+        <div> <!-- style guide -->
             <picture>
-              <source srcset="styleguide600.png" media="(max-width:767px)">
-                <img src="styleguide1200.png" alt="Mockup Images">
+              <source srcset="img/shop_made_in_dc/styleguide600.png" media="(max-width:767px)">
+                <img src="img/shop_made_in_dc/styleguide1200.png" alt="Mockup Images">
             </picture>
         </div>
 
-        <div class="container"> <!-- 2 columns (Shop Local Maker & Products Mockup & Text) -->
-          <picture>
-            <source srcset="img/shop_made_in_dc/600px.png" media="(max-width:767px)">
-            <img src="img/shop_made_in_dc/1200px.png" alt="Mockup Images">
-          </picture>
+        <div class="rows"> <!-- 2 columns (Shop Local Maker & Products Mockup & Text) -->
           <div>
-            <h2> Shop Local Makers & Products </h2>
+            <h4> Shop Local Makers & Products </h4>
+          </div>
+          <div>
+            <picture>
+              <source srcset="img/shop_made_in_dc/makers_products600.png" media="(max-width:767px)">
+              <img src="img/shop_made_in_dc/makers_products_1200.png" alt="Mockup Images">
+            </picture>
           </div>
         </div>
 
-        <div class="container"> <!-- 2 columns (Giftboxes Mock Up & Text) -->
-          <picture>
-            <source srcset="img/shop_made_in_dc/giftbox600.png" media="(max-width:767px)">
-            <img src="img/shop_made_in_dc/giftbox1200.png" alt="Mockup Images">
-          </picture>
+        <div class="rows"> <!-- 2 columns (Giftboxes Mock Up & Text) -->
           <div>
-            <h2> Giftboxes </h2>
+            <h4> Giftboxes </h4>
+          </div>
+          <div>
+            <picture>
+              <source srcset="img/shop_made_in_dc/giftbox600.png" media="(max-width:767px)">
+              <img src="img/shop_made_in_dc/giftbox1200.png" alt="Mockup Images">
+            </picture>
           </div>
         </div>
 
-        <div class="container"> <!-- 2 columns (Workshops Mock Up & Text) -->
-          <picture>
-            <source srcset="img/shop_made_in_dc/workshops600.png" media="(max-width:767px)">
-            <img src="img/shop_made_in_dc/workshops1200.png" alt="Mockup Images">
-          </picture>
+        <div class="rows"> <!-- 2 columns (Workshops Mock Up & Text) -->
           <div>
-            <h2> Workshops </h2>
+            <h4> Workshops </h4>
+          </div>
+          <div>
+            <picture>
+              <source srcset="img/shop_made_in_dc/workshops600.png" media="(max-width:767px)">
+                <img src="img/shop_made_in_dc/workshops1200.png" alt="Mockup Images">
+            </picture>
           </div>
         </div>
 
@@ -169,7 +166,7 @@
 
 
 
-      <div class="container"> <!-- BEGIN RETROSPECTIVE -->
+      <div> <!-- BEGIN RETROSPECTIVE -->
         <div>
           <h2> Reflection </h2>
           <p><span> Throughout this process, I was able to learn how to design for an online retail store and what elements are needed to provide a positive shopping experience online. I honed existing skills while learning new ones. I also gained insight on what I need to work to become a better UX designer.  </span> </p>
@@ -177,7 +174,7 @@
       </div> <!-- END RETROSPECTIVE -->
 
 
-        <div class="container"> <!-- FINAL GRID MOCKUP  -->
+        <div> <!-- FINAL GRID MOCKUP  -->
           <picture>
             <source srcset="img/shop_made_in_dc/finalmockup600.png" media="(max-width:767px)">
             <img src="img/shop_made_in_dc/finalmockup1200.png" alt="Mockup Images">
@@ -187,11 +184,16 @@
   </div>
 </main>
 
-<footer id="contact" class="container">
-  <div>
+<footer>
+  <div class="container">
+    <div>
       <h2>Get in Touch</h2>
       <p> Let's discuss ideas, projects, and opportunities. Reach out below </p>
-      <div> <a href="mailto:jamino323@gmail.com">Email me</a> </div>
+    </div>
+    <div>
+      <a href="mailto:jamino323@gmail.com" class="button"> Email me </a>
+    </div>
+  </div>
 
       <!-- Linkedin Icon -->
       <?xml version="1.0" encoding="utf-8"?>
@@ -242,7 +244,8 @@
       </svg>
 
     </div>
-  <div> <p>Copyright Jami No 2020</p> </div>
+  <div>
+    <p>Copyright Jami No 2020</p> </div>
   </div>
 </footer>
 

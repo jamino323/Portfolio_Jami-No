@@ -12,39 +12,36 @@
 </head>
 
 <body>
-  <header class="container">
-    <div>
-      <div> <img src="img/logo.png" alt="Jami No" width="45" height="56" style="center-align:center">
-            <div>UX/UI Designer</div>
-      </div>
+  <header>
+    <div class="container">
       <div>
-        <nav>
-          <div>
-            <ul>
-              <li><a href="index.html"> Work </a></li>
-              <li><a href="about.html"> About </a></li>
-              <li><a href="#contact"> Contact </a></li>
-            </ul>
-          </div>
-        </nav>
+        <img id="logo" src="img/logo.png" alt="Jami No" >
       </div>
+        <nav>
+          <ul>
+            <li> <a href="index.html"> Work </a> </li>
+            <li> <a href="about.html"> About </a> </li>
+            <li> <a href="contact.html"> Contact </a> </li>
+          </ul>
+        </nav>
     </div>
   </header>
 
 <main>
-  <div class-"container">
-    <div> <!-- Title -->
+  <div class="container">
+
+    <div> <!--title-->
       <h1> About </h1>
     </div>
 
-    <div> <!-- Headshot -->
+    <div> <!--headshot-->
       <picture>
         <source srcset="img/Headshot_600px.jpg" media="(max-width:767px)">
         <img src="img/Headshot_1200px.jpg" alt="Jami No">
       </picture>
     </div>
 
-    <div> <!-- Bio -->
+    <div> <!-- bio -->
       <h2> I'm Jami No and I am a UX/UI designer. My goals are to create meaningful designs and never stop learning </h2>
       <p> With a background in interior architecture and psychology, I have always had a propensity for analyzing user needs and strive to take
         a human centered approach.
@@ -57,18 +54,20 @@
       </p>
     </div>
 
-    <!-- Resume -->
-    <div> <a href="files/Resume_Jami No.pdf" class="button" download>Resume</a> </div>
+    <!-- resume -->
+    <div>
+      <a href="files/Resume_Jami No.pdf" class="button" download>Resume</a>
+    </div>
 
-    <div> <!-- Skills & Tools -->
-      <h3> Tools </h3>
+    <div class="row"> <!--skill & tools -->
+      <h4> Tools </h4>
       <ul>
-        <li> Adobe:Ps,Id,Ai,XD </li>
+        <li> Adobe: Ps, Id , Ai, XD </li>
         <li> Invision </li>
         <li> Sketch </li>
         <li> Figma </li>
       </ul>
-      <h3> Skills </h3>
+      <h4> Skills </h4>
       <ul>
         <li> Wireframing </li>
         <li> Prototyping </li>
@@ -82,13 +81,19 @@
       </ul>
     </div>
 
+  </div>
 </main>
 
-<footer id="contact" class="container">
-  <div>
+<footer>
+  <div class="container">
+    <div>
       <h2>Get in Touch</h2>
       <p> Let's discuss ideas, projects, and opportunities. Reach out below </p>
-      <div> <a href="mailto:jamino323@gmail.com"class="button"> Email me</a> </div>
+    </div>
+    <div>
+      <a href="mailto:jamino323@gmail.com" class="button"> Email me </a>
+    </div>
+  </div>
 
       <!-- Linkedin Icon -->
       <?xml version="1.0" encoding="utf-8"?>
@@ -139,7 +144,8 @@
       </svg>
 
     </div>
-  <div> <p>Copyright Jami No 2020</p> </div>
+  <div>
+    <p>Copyright Jami No 2020</p> </div>
   </div>
 </footer>
 

@@ -25,16 +25,20 @@ h1 {
 
 h2 {
   font-size: 2.25em;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 h3 {
   font-size: 1.75em;
-  font-weight: 400;
+  font-weight: 500;
 }
 h4 {
-  font-size: 1.35em;
-  font-weight: 400;
+  font-size: 1em;
+  font-weight: 500;
+}
+p {
+  font-size: 1em;
+  font-weight: 300;
 }
 
 a:visited {
@@ -56,12 +60,13 @@ a:focus {
   color: #ffffff;
   font-weight: 400;
   padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #000000;
+  border-radius: 2px;
   transition: 0.2s opacity;
+  text-decoration: none;
 }
 .button:hover {
-  opacity: 0.8;
+  opacity: 0.6;
+  text-decoration: none;
   text-decoration: none;
 }
 
@@ -72,4 +77,64 @@ img {
 /* Layout styling */
 .container {
   padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0px; /* 25px top and bottom, 0 left and right */
+}
+
+.logo {
+  max-width: 100px 100px;
+}
+
+header {
+  background-color: #597058;
+  text-align: center;
+  padding: 10px 0;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow:    0px 2px 5px 0px rgba(50, 50, 50, 0.5);
+  box-shadow:         0px 2px 5px 0px rgba(50, 50, 50, 0.5);
+  position: relative;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul > li > a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+nav > ul > li > a:active {
+  color: #000000;
+  text-decoration: none;
+}
+
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+main {
+  padding-top: 100px;
 }

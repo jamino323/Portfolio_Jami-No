@@ -14,58 +14,56 @@
 <body>
   <header>
     <div class="container">
-      <div> <img src="img/logo.png" alt="Jami No" width="45" height="56" style="center-align:center">
-            <div>UX/UI Designer</div>
-      </div>
       <div>
-        <nav>
-          <div>
-            <ul>
-              <li><a href="index.html"> Work </a></li>
-              <li><a href="about.html"> About </a></li>
-              <li><a href="contact.html"> Contact </a></li>
-            </ul>
-          </div>
-        </nav>
+        <img id="logo" src="img/logo.png" alt="Jami No" >
       </div>
+        <nav>
+          <ul>
+            <li> <a href="index.html"> Work </a> </li>
+            <li> <a href="about.html"> About </a> </li>
+            <li> <a href="contact.html"> Contact </a> </li>
+          </ul>
+        </nav>
     </div>
   </header>
 
 <main>
-  <div class="container"> <!-- Projects in a grid -->
+    <div id="work" class="container"> <!-- container-->
 
-    <div> <!-- 1 Shop Made in DC Website -->
-      <div>
-        <picture> <!-- Link to Project Page -->
-          <source srcset="img/shop_made_in_dc/hero_image600.png" media="(max-width:767px)">
-          <img src="img/shop made in dc/hero_image1200.png" alt="Shop Made in DC Project">
-        </picture>
-    </div><!-- end Shop Made in DC Project -->
+        <div> <!-- 1 Shop Made in DC Website -->
+          <picture> <!-- Link to Project Page -->
+            <source srcset="img/shop_made_in_dc/hero_image600.png" media="(max-width:767px)">
+            <img src="img/shop made in dc/hero_image1200.png" alt="Shop Made in DC Project">
+          </picture>
+        </div>
 
-    <div><!-- 2 MobileVote App -->
-      <picture> <!-- Link to Project Page -->
-        <source srcset="img/mobile_vote/MobileVoteGrid_600px.png" media="(max-width:767px)">
-        <img src="img/mobile_vote/MobileVoteGrid_1200px.png" alt="MobileVote App">
-      </picture>
-    </div><!-- End MobileVote App -->
+        <div><!-- 2 MobileVote App -->
+          <picture> <!-- Link to Project Page -->
+            <source srcset="img/mobile_vote/MobileVoteGrid_600px.png" media="(max-width:767px)">
+            <img src="img/mobile_vote/MobileVoteGrid_1200px.png" alt="MobileVote App">
+          </picture>
+        </div>
 
-    <div><!-- 3 Local Market App  -->
-      <picture> <!-- Link to Project Page -->
-        <source srcset="img/brainpop/pantry_600px.png" media="(max-width:767px)">
-        <img src="img/brainpop/pantry_1200px.png" alt="Brainpop Interiors Project">
-      </picture>
-    </div> <!-- End Local Market Project -->
+        <div><!-- 3 Local Market App  -->
+          <picture> <!-- Link to Project Page -->
+            <source srcset="img/brainpop/pantry_600px.png" media="(max-width:767px)">
+            <img src="img/brainpop/pantry_1200px.png" alt="Brainpop Interiors Project">
+          </picture>
+        </div>
 
-  </div> <!-- End Projects in a grid -->
+    </div> <!-- container-->
 </main>
 
 <footer>
-    <div id="contact" class="container">
+  <div id="footer" class="container">
+    <div>
       <h2>Get in Touch</h2>
       <p> Let's discuss ideas, projects, and opportunities. Reach out below </p>
     </div>
-    <div class="container"> <a href="mailto:jamino323@gmail.com" class="button"> Email me </a>
+    <div>
+      <a href="mailto:jamino323@gmail.com" class="button"> Email me </a>
     </div>
+  </div>
 
       <!-- Linkedin Icon -->
       <?xml version="1.0" encoding="utf-8"?>
@@ -116,7 +114,8 @@
       </svg>
 
     </div>
-  <div> <p>Copyright Jami No 2020</p> </div>
+  <div>
+    <p>Copyright Jami No 2020</p> </div>
   </div>
 </footer>
 
