@@ -41,13 +41,13 @@ a:visited {
   color: #000000;
 }
 a:active {
-  color: #597058;
+  color: #000000;
 }
 
 a:hover,
 a:focus {
-  color: #597058;
-  text-decoration: underline;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .button {
@@ -67,4 +67,9 @@ a:focus {
 
 img {
   width: 100%;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
 }
