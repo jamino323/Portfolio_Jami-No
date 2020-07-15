@@ -12,7 +12,7 @@ body {
   font-size: 14px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #4a4a4a;
+  color: #000000;
 }
 
 h1, h2, h3, h4 {
@@ -61,12 +61,12 @@ a:focus {
   font-weight: 400;
   padding: 10px;
   border-radius: 2px;
+  text-decoration: none;
   transition: 0.2s opacity;
-  text-decoration: none;
 }
+
 .button:hover {
-  opacity: 0.6;
-  text-decoration: none;
+  opacity: 0.8;
   text-decoration: none;
 }
 
@@ -76,11 +76,11 @@ img {
 
 /* Layout styling */
 .container {
-  padding: 0 15px;
+  padding: 0 0px;
 }
 
 .row {
-  margin: 25px 0px; /* 25px top and bottom, 0 left and right */
+  margin: 0px 0px; /* 25px top and bottom, 0 left and right */
 }
 
 .logo {
@@ -162,15 +162,63 @@ Medium devices (640px and larger)
     width: auto;
     float: right
     margin-top: 4px;
+  }
+
+  .col-md-6 {
+  width: 50%;
+}
+
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  header {
+  text-align: unset;
+  padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right
+    margin-top: 4px;
+  }
+
+  .col-md-6 {
+  width: 50%;
 }
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {
+
+[class*="col-"] {
+  float: left;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes frontclouds-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+#frontclouds {
+  animation: 30s frontclouds-move infinite alternate linear;
+}
+
+@keyframes backcloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+#backcloud {
+  animation: 34s backcloud-reverse infinite alternate linear;
 }
