@@ -87,6 +87,16 @@ img {
   max-width: 100px 100px;
 }
 
+.logo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 500; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 header {
   background-color: #597058;
   text-align: center;
@@ -137,4 +147,30 @@ nav > ul > li > a:focus {
 
 main {
   padding-top: 100px;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+  text-align: unset;
+  padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right
+    margin-top: 4px;
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }
