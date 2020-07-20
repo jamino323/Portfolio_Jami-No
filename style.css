@@ -271,12 +271,12 @@ Large devices (1024px or larger)
 }
 
 @keyframes cloud_back-move-reverse {
-  from {transform: translate(800,5px);}
-  to {transform: translate(100px,5px);}
+  to {transform: translate(800,5px);}
+  from {transform: translate(100px,5px);}
 }
 
 #cloud_back {
-  animation: 34s cloud_back-reverse infinite alternate linear;
+  animation: 34s cloud_back-move-reverse infinite alternate linear;
 }
 
 #social {
