@@ -104,7 +104,8 @@ img {
 }
 
 .logo {
-  max-width: 150px;
+  max-width: 80px;
+  padding-top: 20px;
 }
 
 .logo {
@@ -145,13 +146,26 @@ header {
   width: 100%;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-top: 50px;
+}
+
 nav > ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav > ul > li > a {
@@ -160,11 +174,6 @@ nav > ul > li > a {
   font-weight: 500;
   color: #000000;
   text-decoration: none;
-}
-
-nav {
-  display: inline-block;
-  width: 100%;
 }
 
 nav > ul > li > a:visited {
@@ -187,10 +196,45 @@ main {
   padding-bottom: 200px;
 }
 
+#dc {
+  text-align: center;
+  padding: 30px 0;
+}
+
+@keyframes clouds_front-move {
+  from {transform: translate(0,10px);}
+  to {transform: translate(200px,10px);}
+}
+
+#clouds_front {
+  animation: 30s clouds_front-move infinite alternate linear;
+}
+
+@keyframes cloud_back-move-reverse {
+  to {transform: translate(800,5px);}
+  from {transform: translate(100px,5px);}
+}
+
+#cloud_back {
+  animation: 34s cloud_back-move-reverse infinite alternate linear;
+}
+
+#social {
+  max-width: 50px;
+  text-align: center;
+  display: inline-block;
+  padding-top: 10px;
+}
+
+#contact2 {
+  padding-top: 20px;
+  padding-bottom: 400px;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width:640px) {
   header {
   text-align: unset;
   padding: 20px 0 13px;
@@ -200,7 +244,20 @@ Medium devices (640px and larger)
     width: auto;
     float: right;
     margin-top: 4px;
+    padding-top: 10px;
   }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  nav > ul {
+  margin: 1em 0;
+}
 
     .col-md-6 {
     width: 50%;
@@ -240,6 +297,14 @@ Large devices (1024px or larger)
     margin-top: 4px;
   }
 
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav > ul {
+  margin: 1em 0;
+}
+
   .col-lg-7 {
   width: 60%;
 }
@@ -253,39 +318,4 @@ Large devices (1024px or larger)
   padding-right: 20px;
 }
 
-}
-
-#dc {
-  text-align: center;
-  padding: 30px 0;
-}
-
-@keyframes clouds_front-move {
-  from {transform: translate(0,10px);}
-  to {transform: translate(200px,10px);}
-}
-
-#clouds_front {
-  animation: 30s clouds_front-move infinite alternate linear;
-}
-
-@keyframes cloud_back-move-reverse {
-  to {transform: translate(800,5px);}
-  from {transform: translate(100px,5px);}
-}
-
-#cloud_back {
-  animation: 34s cloud_back-move-reverse infinite alternate linear;
-}
-
-#social {
-  max-width: 50px;
-  text-align: center;
-  display: inline-block;
-  padding-top: 10px;
-}
-
-#contact2 {
-  padding-top: 20px;
-  padding-bottom: 400px;
 }

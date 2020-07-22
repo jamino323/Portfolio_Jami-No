@@ -1,1 +1,1 @@
-console.log("Hi, welcome to my portfolio")
+console.log("Hi! Welcome to My Portfolio Site")
