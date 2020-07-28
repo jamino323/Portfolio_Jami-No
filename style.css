@@ -4,7 +4,6 @@ Colors used:
 (Black): #000000;
 Green): #597058;
 */
-
 * {
   box-sizing: border-box;
 }
@@ -12,15 +11,19 @@ Green): #597058;
 body {
   background-color: #ffffff;
   font-family: 'Poppins', sans-serif;
-  font-size: 14px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 14px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
   color: #000000;
 }
 
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
+
 h1 {
   font-size: 2.75em;
   font-weight: 700;
@@ -35,10 +38,12 @@ h3 {
   font-size: 1.75em;
   font-weight: 500;
 }
+
 h4 {
   font-size: 1em;
   font-weight: 500;
 }
+
 p {
   font-size: 1em;
   font-weight: 300;
@@ -47,6 +52,7 @@ p {
 a:visited {
   color: #000000;
 }
+
 a:active {
   color: #000000;
 }
@@ -89,7 +95,6 @@ a:focus {
   text-decoration: none;
 }
 
-
 img {
   width: 100%;
 }
@@ -100,7 +105,8 @@ img {
 }
 
 .row {
-  margin: 25px 0px; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0px;
+  /* 25px top and bottom, 0 left and right */
 }
 
 .logo {
@@ -110,9 +116,12 @@ img {
 
 .logo {
   font-family: 'Poppins', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 500; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 500;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
@@ -141,8 +150,8 @@ header {
   background-color: #ffffff;
   padding: 10px 0;
   -webkit-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.5);
-  -moz-box-shadow:    0px 2px 5px 0px rgba(50, 50, 50, 0.5);
-  box-shadow:         0px 2px 5px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.5);
+  box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.5);
   position: relative;
   width: 100%;
 }
@@ -163,7 +172,7 @@ header {
   padding-top: 50px;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
@@ -171,23 +180,23 @@ header {
   padding: 24px 0 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(0,0,0,0);
+  border-top: 1px solid rgba(0, 0, 0, 0);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 500;
@@ -195,17 +204,18 @@ nav > ul > li > a {
   text-decoration: none;
 }
 
-nav > ul > li > a:visited {
-  color: #000000;
-  text-decoration: none;
-}
-nav > ul > li > a:active {
+nav>ul>li>a:visited {
   color: #000000;
   text-decoration: none;
 }
 
-nav > ul > li > a:hover,
-nav > ul > li > a:focus {
+nav>ul>li>a:active {
+  color: #000000;
+  text-decoration: none;
+}
+
+nav>ul>li>a:hover,
+nav>ul>li>a:focus {
   color: #000000;
   text-decoration: none;
 }
@@ -221,8 +231,13 @@ main {
 }
 
 @keyframes clouds_front-move {
-  from {transform: translate(0,10px);}
-  to {transform: translate(200px,10px);}
+  from {
+    transform: translate(0, 10px);
+  }
+
+  to {
+    transform: translate(200px, 10px);
+  }
 }
 
 #clouds_front {
@@ -230,15 +245,20 @@ main {
 }
 
 @keyframes cloud_back-move-reverse {
-  to {transform: translate(800,5px);}
-  from {transform: translate(100px,5px);}
+  to {
+    transform: translate(0px, 10px);
+  }
+
+  from {
+    transform: translate(100px, 10px);
+  }
 }
 
 #cloud_back {
   animation: 34s cloud_back-move-reverse infinite alternate linear;
 }
 
-#social {
+.social {
   max-width: 50px;
   text-align: center;
   display: inline-block;
@@ -255,8 +275,8 @@ Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width:640px) {
   header {
-  text-align: unset;
-  padding: 20px 0 13px;
+    text-align: unset;
+    padding: 20px 0 13px;
   }
 
   nav {
@@ -271,18 +291,18 @@ Medium devices (640px and larger)
   }
 
   .navtoggle li:last-child {
-  display: none;
-}
+    display: none;
+  }
 
-  nav > ul > li {
+  nav>ul>li {
     display: inline-block;
   }
 
-  nav > ul {
-  margin: 1em 0;
-}
+  nav>ul {
+    margin: 1em 0;
+  }
 
-    .col-md-6 {
+  .col-md-6 {
     width: 50%;
   }
 
@@ -302,7 +322,6 @@ Medium devices (640px and larger)
     margin-left: auto;
     margin-right: auto;
   }
-
 }
 
 /* ==============================
@@ -310,8 +329,8 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
   header {
-  text-align: unset;
-  padding: 20px 0 10px;
+    text-align: unset;
+    padding: 20px 0 10px;
   }
 
   nav {
@@ -326,18 +345,18 @@ Large devices (1024px or larger)
   }
 
   .navtoggle li:last-child {
-  display: none;
-}
+    display: none;
+  }
 
-  nav > ul > li {
+  nav>ul>li {
     display: inline-block;
   }
 
-  nav > ul {
-  margin: 1em 0;
-}
+  nav>ul {
+    margin: 1em 0;
+  }
 
-    .col-md-6 {
+  .col-md-6 {
     width: 50%;
   }
 
@@ -357,5 +376,4 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
   }
-
 }
